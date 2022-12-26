@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+</head>
+
+<body>
+    <h1>Race Registration!!!</h1>
+    <form action="/reg">
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" name="firstname" id="fname" required>
+            <label for="lname">Last Name</label>
+            <input type="text" name="Lname" id="lname" required>
+        </div>
+        <p>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" placeholder="Password" minlength="6" maxlength="12" required>
+        </p>
+        <p>
+            <label for="ddate">Enter DOB</label>
+            <input id="ddate" type="date" placeholder="enter date">
+        </p>
+        <p>
+            <label for="cc">choose color</label>
+            <input id="cc" type="color">
+        </p>
+        <p>
+            <input type="image" id="img">
+            <label for="img">Your image</label>
+        </p>
+        <p>Select a race:</p>
+        <div>
+            <input type="radio" name="race" id="5k" value="5k">
+            <label for="5k">Fun Run 5K</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="hm" value="half marathon">
+            <label for="hm">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" name="race" id="fm" value="full marathon">
+            <label for="fm">Full Marathon</label>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="pwd">Password</label>
+            <input type="password" name="passwd" id="pwd" required>
+        </div>
+        <div>
+            <p>Select your age group: </p>
+            <p>
+                <input type="checkbox" name="age" id="18" value="Less than 18">
+                <label for="18">Less than 18</label>
+            </p>
+            <p>
+                <input type="checkbox" name="age" id="1830" value="more than 18">
+                <label for="1830">18-30</label>
+            </p>
+            <p>
+                <input type="checkbox" name="age" id="30+" value="30+">
+                <label for="30+">More than 30</label>
+            </p>
+        </div>
+        <p>
+            <label for="fbk">Any Suggestions?</label>
+            <textarea name="feedback" id="fbk" cols="30" rows="10" placeholder="Type here"></textarea>
+        </p>
+
+        <P>
+            <button>Submit</button>
+            <input type="reset" value="Reset">
+        </P>
+
+    </form>
+
+</body>
+
+</html>
