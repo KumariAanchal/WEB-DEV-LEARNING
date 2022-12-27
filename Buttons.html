@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Tutorial</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<style>
+    form div {
+        color: rgb(123, 66, 128);
+
+    }
+
+    .box {
+        padding: 10px;
+        border: 3px solid rgb(27, 21, 33);
+        height: 500px;
+        width: 500px;
+        background-color: rgb(70, 103, 103);
+    }
+
+    body {
+        background-color: rgb(95, 119, 95);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+    }
+</style>
+
+<body>
+    <h1>Choose Your Favourite Exercise</h1>
+    <form action="/burnup">
+        <p>
+            <label for="username">Enter Username</label>
+            <input type="text" id="username" placeholder="Username" required>
+        </p>
+        <p>
+            <label for="Phone no">Enter Phone no.</label>
+            <input type="number" id="Phone no" placeholder="Mobile no">
+        </p>
+        <p>
+            <label for="ddate">Enter DOB</label>
+            <input id="ddate" type="date" placeholder="enter date">
+        </p>
+        <p>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" placeholder="Password" minlength="6" maxlength="12" required>
+        </p>
+        <p>
+            <label for="Slot">Select your gym timing slot</label>
+            <select name="Slot" id="Slot">
+                <option value="">Please select your slot</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+        </p>
+        <p>
+            <label for="cc">choose color</label>
+            <input id="cc" type="color">
+        </p>
+        <p>1.Choose your Favourite Cardio exercise.</p>
+        <p>
+            <input type="checkbox" name="cardio" id="squats" value="Squats">
+            <label for="squats">Squats</label>
+        </p>
+        <p>
+            <input type="checkbox" name="cardio" id="skipping" value="Skipping">
+            <label for="skipping">Skipping rope</label>
+        </p>
+        <p>
+            <input type="checkbox" name="cardio" id="burpees" value="Burpees">
+            <label for="burpees">Burpees</label>
+        </p>
+        <p>
+            <input type="checkbox" name="cardio" id="mc" value="Mountain Climbers">
+            <label for="mc">Mountain Climbers</label>
+        </p>
+        <p>2.Choose your Favourite Muscle exercise.</p>
+        <p>
+            <input type="checkbox" name="gym" id="Back" value="Back">
+            <label for="Back">Back</label>
+        </p>
+        <p>
+            <input type="checkbox" name="gym" id="Biceps" value="Biceps">
+            <label for="Biceps">Biceps</label>
+        </p>
+        <p>
+            <input type="checkbox" name="gym" id="Abs" value="Abs">
+            <label for="Abs">Abs</label>
+        </p>
+        <p>
+            <input type="checkbox" name="gym" id="Triceps" value="Triceps">
+            <label for="Triceps">Triceps</label>
+        </p>
+        <p>
+            <input type="checkbox" name="gym" id="Chest" value="Chest">
+            <label for="Chest">Chest</label>
+        </p>
+        <p>
+            <input type="checkbox" name="gym" id="Shoulder" value="Shoulder">
+            <label for="Shoulder">Shoulder</label>
+        </p>
+        <p>
+            <input type="checkbox" name="gym" id="Legs" value="Legs">
+            <label for="Legs">Legs</label>
+        </p>
+        <p>3.Select Your Diet Type.</p>
+        <p>
+            <input type="radio" name="diet" id="veg" value="Vegetarian" checked>
+            <label for="veg">Vegetarian</label>
+            <input type="radio" name="diet" id="nveg" value="Non-Vegetarian">
+            <label for="nveg">Non-Vegetarian</label>
+        </p>
+        <p>Give us your ratings to improve.</p>
+        <p>
+            <input type="range" id="rg" name="Rate" value="3" min="0" max="5">
+            <label for="rg">Ratings</label>
+        </p>
+        <p>
+            <input type="image" id="img">
+            <label for="img">Your image</label>
+        </p>
+        <p>
+            <label for="fbk">Any Feedbacks?</label>
+            <textarea name="feedback" id="fbk" cols="30" rows="10" placeholder="Type here"></textarea>
+        </p>
+
+        <P>
+            <button>Submit</button>
+            <input type="reset" value="Reset">
+        </P>
+    </form>
+</body>
+
+</html>
