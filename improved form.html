@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form </title>
+    <style>
+        form div {
+            color: rgb(123, 66, 128);
+
+        }
+
+        .box {
+            padding: 10px;
+            border: 3px solid rgb(27, 21, 33);
+            height: 500px;
+            width: 500px;
+            background-color: rgb(70, 103, 103);
+        }
+
+        body {
+            background-color: rgb(95, 119, 95);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>REGISTRATION FORM </h1>
+    <form action="" method="get" class="box">
+        <label for="name"><b>Enter the name :</b></label>
+        <br>
+        <input type="text" placeholder="Enter the name " name="name" id="name ">
+        <br>
+        <br>
+        <label for="password"><b>Enter the password :</b></label>
+        <br>
+        <input type="password" placeholder="Enter the password  " name="password" id="password ">
+        <br>
+        <p>
+            <label for="ddate">Enter DOB</label>
+            <input id="ddate" type="date" placeholder="enter date">
+        </p>
+        <p>
+            <label for="cc">choose color</label>
+            <input id="cc" type="color">
+        </p>
+        <p>
+            <input type="image" id="img">
+            <label for="img">Your image</label>
+        </p>
+        <br>
+        <label for="file"><b>Upload your document file</b></label>
+        <br>
+        <input type="file">
+        <br>
+        <br>
+        <label for="date"><b>Date of Birth</b></label>
+        <br>
+        <input type="date">
+        <br>
+        <label for="number"><b>Enter the mobile number</b></label>
+        <br>
+        <input type="number">
+        <br>
+        <br>
+        <p>------------------------------------------------------------------------------------------------</p>
+        <div padding="20px"><b>Choose one of the following languages <b></div>
+        <input type="radio" name="apoorv1">
+        <label>Java</label>
+        <input type="radio" name="apoorv1">
+        <label>C++</label>
+        <input type="radio" name="apoorv1">
+        <label>C</label>
+        <div padding="20px"><b>Choose one of the following subjects <b></div>
+        <input type="checkbox" name="apoorv1">
+        <label>OS</label>
+        <input type="checkbox" name="apoorv2">
+        <label>CN</label>
+        <input type="checkbox" name="apoorv3">
+        <label>ML</label>
+        <br>
+        <br>
+        <p>
+            <label for="fbk">Any Suggestions?</label>
+            <textarea name="feedback" id="fbk" cols="30" rows="10" placeholder="Type here"></textarea>
+        </p>
+
+        <P>
+            <button>Submit</button>
+            <input type="reset" value="Reset">
+        </P>
+
+
+
+
+    </form>
+</body>
+
+</html>
