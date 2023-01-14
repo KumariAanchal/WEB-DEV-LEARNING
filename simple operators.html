@@ -1,0 +1,34 @@
+<html>
+
+<body>
+    <script>
+        document.write("<b> <h1> Calculator using Switch Case Statement</h1> </b>")
+        let result;
+        const op = prompt("Enter operator ( either +, -, * or / ): ");
+        const a = parseFloat(prompt("Enter first number: "));
+        const b = parseFloat(prompt("Enter second number: "));
+        switch (op) {
+            case '+':
+                result = a + b;
+                document.write(`<b> <h1>${a} + ${b} = ${result} </h1> </b>`);
+                break;
+            case '-':
+                result = a - b;
+                document.write(`<b> <h1>${a} - ${b} = ${result} </h1> </b>`);
+                break;
+            case '*':
+                result = a * b;
+                document.write(`<b> <h1>${a} * ${b} = ${result} </h1> </b>`);
+                break;
+            case '/':
+                result = a / b;
+                document.write(`<b> <h1>${a} / ${b} = ${result} </h1> </b>`);
+                break;
+            default:
+                document.write("<b> <h2> Invalid operator </h2> </b>");
+                break;
+        }
+    </script>
+</body>
+
+</html>
